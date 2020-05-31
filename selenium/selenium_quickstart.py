@@ -16,6 +16,5 @@ def main(chromedriver_path,url):
 	driver = set_up_driver(chromedriver_path)
     driver.get(url)
     
-
-if "__name__" in  __main__:
+if __name__ == "__main__":
 	main("path/to/driver","link")
