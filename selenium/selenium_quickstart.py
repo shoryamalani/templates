@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.options import Options
 def set_up_driver(chromedriver_path):
     options = Options()
     options.headless = False
-    driver = webdriver.Chrome(chromedriver_path)
+    driver = webdriver.Chrome(chromedriver_path,options=options)
     return driver
 
 def main(chromedriver_path,url):
