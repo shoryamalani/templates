@@ -9,7 +9,7 @@ function submit_text() {
 
 
 function get_room(id) {
-    window.location.href = "math_room/" + id
+    window.location.href = "room/" + id
 }
 
 function create_room() {
