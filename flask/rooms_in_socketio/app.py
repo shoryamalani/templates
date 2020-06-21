@@ -95,7 +95,7 @@ def create_room(data):
     global rooms
     room = Room(data["name"])
     rooms.append(room)
-    redirect(url_for("math_room",id=room.id))
+    redirect(url_for("room",id=room.id))
     return emit("get_rooms",[{room.name:room.id}])
     # emit("join_room")
     
